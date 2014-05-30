@@ -8,9 +8,12 @@ a muti platform simple audio player to play wav/mp3 using html5(tested on chrome
 * head import jquery-1.8.2.min.js
 * head import jquery.timers.min.js
 * head import audioplayer.js
-* set the audio class = "whateveryoulike"
-* add code on document.ready() function.
-
+* set the div attributes class = "whateveryoulike" and data-audio = "audiosource.wav".like this,
+``` html
+<div class="audioplayer" data-audio="sample/3680_0006_8000.wav" ></div>
+<div class="audioplayer" data-audio="sample/sample.wav" ></div>
+```
+* add code on document.ready() function.like this,
 ``` javascript
 $(document).ready(function(){
 	var config = {id:"zzAuidoPlayArea",playingCSS:"playing",defaultText:"PLAY"};
