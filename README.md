@@ -17,7 +17,7 @@ a muti platform simple audio player to play wav/mp3 using html5(tested on chrome
 ``` javascript
 $(document).ready(function(){
 	var config = {id:"zzAuidoPlayArea",playingCSS:"playing",defaultText:"PLAY"};
-	$(".whateveryoulike").each(function(){
+	$(".audioplayer").each(function(){
 		$(this).zzAudioPlay(config);
 	});
 });
