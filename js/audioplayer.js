@@ -34,10 +34,9 @@
 
 
 		// JavaScript Document
-		/** 音乐播放器
-		 * @param obj 	播放器id
-		 * @param file 	音频文件 mp3: ogg:
-		 * @param loop	是否循环
+		/** 
+		 * @param obj 	id
+		 * @param file 	mp3: ogg:
 		 */
 		function audioplayer(id, file, loop)
 		{
