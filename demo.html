@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>zzAudioPlayer</title>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.timers.min.js"></script>
+<script  src="js/audioplayer.js"></script>
+<script>
+$(document).ready(function(){
+		var config = {id:"zzAuidoPlayArea",playingCSS:"playing",defaultText:"PLAY"};
+		$(".audioplayer").each(function(){
+			$(this).zzAudioPlay(config);
+		});
+	});
+</script>
+<style>
+.audioplayer{ width:100px; cursor:pointer; height:30px; width:80px; border:#999999 1px solid; line-height:30px; color:#999999; text-align:center; margin: 15px;}
+.playing{  border:#009900 thin solid; color:#009900; }
+</style>
+</head>
+<h1>zzAuidoPlayer</h1>
+<hr/>
+
+<div class="audioplayer" data-audio="sample/3680_0006_8000.wav" ></div>
+<div class="audioplayer" data-audio="sample/sample.wav" ></div>
+</body>
+</html>
