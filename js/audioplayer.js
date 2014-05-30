@@ -124,9 +124,11 @@
 					music.type= 'audio/wav';
 					player.appendChild(music);
 					
-					addListener(player,"play",onStartPlay);
+					//addListener(player,"play",onStartPlay);
 					addListener(player,"timeupdate",onPlaying);
 					addListener(player,"ended",onEndPlay);
+
+					player.play();
 
 				}
 				player.isRemoved = false;
